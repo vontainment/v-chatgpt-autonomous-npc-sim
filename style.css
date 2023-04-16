@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#chat-log {
+    height: 500px;
+    overflow-y: scroll;
+    border: 2px solid #66cc33;
+    padding: 10px;
+    line-height: 2em;
+    font-size: 0.8em;
+}
+
+.flex {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#human-form {
+    display: inline-flex;
+}
+
+#human-response {
+    margin-right: 10px;
+    width: 600px;
+    height: 70px;
+    border: 2px solid #66cc33;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#submit-btn,
+#generate-npc-prompt-btn {
+    width: 100px;
+    height: 70px;
+    background-color: #66cc33;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#submit-btn:hover,
+#generate-npc-prompt-btn:hover {
+    cursor: pointer;
+}
+
+#generate-npc-prompt-btn {
+    background-color: #f44336;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    #chat-log {
+        font-size: 0.7em;
+    }
+
+    #human-response {
+        height: 20px;
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    #submit-btn,
+    #generate-npc-prompt-btn {
+        width: 60px;
+        height: 25px;
+        font-size: 0.8em;
+    }
+}
+
+#submit-btn:focus,
+#human-response:focus {
+    outline: none;
+}
